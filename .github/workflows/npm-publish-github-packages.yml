@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm --version
+      - run: npm install
       - run: npm run develop
         env:
           HOST: 0.0.0.0
